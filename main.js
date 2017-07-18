@@ -19,8 +19,10 @@ fetch(`https://crossorigin.me/http://www.recipepuppy.com/api/?q=${search.value}`
     for (var i = 0; i < results.length; i++) {
       recipes.innerHTML += `
       <div class="wrap">
-    <img src=${results[i].thumbnail}>
-    <a href=${results[i].href}><h1 class="title">${results[i].title}</h1></a>
+        <div class="images">
+          <img src=${results[i].thumbnail}>
+        </div>
+          <a href=${results[i].href}><h1 class="title">${results[i].title}</h1></a>
     </div>
     `
     }
