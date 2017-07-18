@@ -1,5 +1,5 @@
 
-let recipeBox = document.querySelector(".recipeContainer")
+let recipeBox = document.querySelector(".recipeList")
 let recipes = document.querySelector(".list")
 let content = document.querySelector("#container");
 let button = document.querySelector("#button");
@@ -18,8 +18,10 @@ fetch(`https://crossorigin.me/http://www.recipepuppy.com/api/?q=${search.value}`
     let results = data.results;
     for (var i = 0; i < results.length; i++) {
       recipes.innerHTML += `
+      <div class="wrap">
     <img src=${results[i].thumbnail}>
     <a href=${results[i].href}><h1 class="title">${results[i].title}</h1></a>
+    </div>
     `
     }
 

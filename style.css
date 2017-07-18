@@ -1,0 +1,24 @@
+.recipeList{
+  height: 800px;
+  border: solid black;
+}
+
+.recipeList ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.wrap a{
+  font-size: 8px;
+  color: black;
+}
+
+.wrap img{
+  width: 50%;
+}
+
+.wrap{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
